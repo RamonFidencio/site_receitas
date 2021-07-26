@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+    <!--owl css-->
+    <link rel="stylesheet" href="/receitasflix/style/owl.carousel.min.css">
+    <link rel="stylesheet" href="/receitasflix/style/owl.theme.default.min.css">
+    <title>RECEITASFLIX</title>
+
+</head>
+<body>
+    <header>
+        <div class=container>
+            <h2 class="logo">RECEITAFLIX</h2>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Entradas</a>
+                <a href="#">Carnes</a>
+                <a href="#">Doces</a>
+                <a href="#">Bolos</a>
+            </nav>
+            
+        </div>
+    </header>
+    <main>
+        <div class="receita-principal">
+            <div class="container">
+                <h3 class="titulo" >BIFE WELLINGTON</h3>
+                <p class="descricao">Bife Wellington é uma preparação de bife de filé revestido com patê e duxelles, que é então envolto em massa folhada e assado. Algumas receitas incluem envolver a carne revestida em um crepe para reter a umidade e impedir que ele faça uma massa encharcada.</p>
+            
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                     <b>ASSISTIR</b>
+                    </button>
+                
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                            Ver Receita
+                    </button>          
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrossel-receitas">
+        <div class="owl-carousel owl-theme">
+            <div class="item" >
+                <img class="box-receita" src="/receitasflix/imagens/bolinho_bacalhau.jpg" alt="" >
+            </div>
+            <div class="item">
+                <img  class="box-receita" src="/receitasflix/imagens/bruschetta.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-receita" src="/receitasflix/imagens/vieira.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-receita" src="/receitasflix/imagens/contra_file.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-receita" src="/receitasflix/imagens/peito_frango.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-receita" src="/receitasflix/imagens/costelinha.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-receita" src="/receitasflix/imagens/doce_laranja.jpg " alt="">
+            </div>
+            <div class="item">
+                <img class="box-receita" src="/receitasflix/imagens/brigadeira.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-receita" src="/receitasflix/imagens/pavlova.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-receita" src="/receitasflix/imagens/bolo_chocolate.jpg" alt="">
+            </div>
+            <div class="item">
+                <img class="box-receita" src="/receitasflix/imagens/red_velvet.jpg" alt="" >
+            </div>
+            <div class="item">
+                <img class="box-receita" src="/receitasflix/imagens/broinha.jpg" alt="" >
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/4b4ca0a8d5.js" crossorigin="anonymous"></script>
+    <script src="/receitasflix/js/owl/jquery.min.js"></script>
+    <script src="/receitasflix/js/owl/owl.carousel.min.js"></script>
+    <script src="/receitasflix/js/owl/main.js"></script>
+    
+    <section id="conteudo"></section>
+    <button type="button" onclick="chamaGoogle()">Vá para o google para pesquisar a receita</button>
+    <script>
+       document.querySelectorAll('.box-receita').forEach(link =>{
+                link.onclick = function(e) {
+                    e.preventDefault()
+                    const conteudo = document.getElementById('conteudo')
+                    console.log('teste')
+
+                }
+            })
+            function chamaGoogle() {
+    window.open('https://www.google.com/')
+    //window.location.href = "https://www.google.com/"
+}
+
+
+    </script>
+    
+</body>
+</html>
+<!---->

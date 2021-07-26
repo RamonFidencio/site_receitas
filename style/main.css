@@ -1,0 +1,93 @@
+:root{
+    --rosa: #704d6a;
+    --azul: #6599ca;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elemento base*/
+body{
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    color:red;
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+header nav a{
+    text-decoration: none;
+    color: #747474;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color:#ffffff;
+}
+/*Filme principal*/
+
+.receita-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)100%), url(/receitasflix/imagens/bife-wellington.jpg);
+    
+    background-size:cover ;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.receita-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.titulo{
+    margin-top: 5%;
+    font-size: 80px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+.botao{
+    background-color: rgba(0,0,0,0.50);
+    color: white;
+    border-radius: 30px;
+
+    padding: 20px 60px ;
+    margin-right: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+.botao i{
+    margin-right: 5px;
+}
+
+button:hover{
+   border: #cac7c7;
+   background: linear-gradient(#cac7c7,#cac7c7 100%);
+    text-decoration: none;
+   color: black;
+}
+.container{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.receita-principal .container{
+    width: 70%;
+}
+.box-receita{
+    margin-top: 20px;
+    height: 400px;
+    width: 100%;
+   
+}
